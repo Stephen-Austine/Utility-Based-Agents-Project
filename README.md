@@ -57,11 +57,11 @@ The system follows an object-oriented design with clear separation of concerns:
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    Main Execution Loop                       │
+│                    Main Execution Loop                      │
 │                          (24 cycles)                        │
 └─────────────────────────────────────────────────────────────┘
                               │
-              ┌───────────────┴───────────────┐
+              ┌───────────────┴─────────────┐
               ▼                             ▼
   ┌─────────────────────┐       ┌─────────────────────┐
   │    Environment      │       │    Performance      │
@@ -71,7 +71,7 @@ The system follows an object-oriented design with clear separation of concerns:
   │ ─ vacuumlocation    │       └─────────────────────┘
   │ ─ cleaningmethod    │                 ▲
   └─────────────────────┘                 │
-              ▲                         │
+              ▲                           │
               └───────────────────────────┘
               │
               ▼
