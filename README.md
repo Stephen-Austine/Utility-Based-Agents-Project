@@ -152,7 +152,7 @@ Models the stochastic environment state:
 
 | Attribute | Type | Description | Values |
 |-----------|------|-------------|--------|
-| `location` | `list` | Available locations | `["A", "B"]` |
+|  `location`  |  `list`  |  Available locations  | `["A", "B"]` |
 | `locationcondition` | `dict` | Dirt status per location | `{"A": 0/1, "B": 0/1}` |
 | `vacuumlocation` | `str` | Current vacuum position | `"A"` or `"B"` |
 | `mode` | `list` | Cleaning methods | `["T", "L"]` |
@@ -171,10 +171,10 @@ Makes decisions based on current environmental state:
 
 | Decision Factor | Logic |
 |---------------|-------|
-| Clean if dirty | `locationcondition[vacuumlocation] == 1` |
-| Switch method | Toggle between "T" and "L" after cleaning |
-| Move location | Cycle to next index (A→B→A) |
-| Update state | Reset cleaned location to 0, log cleaning history |
+| Clean if dirty  | `locationcondition[vacuumlocation] == 1`  |
+| Switch method  | Toggle between "T" and "L" after cleaning  |
+| Move location  | Cycle to next index (A→B→A)  |
+| Update state  | Reset cleaned location to 0, log cleaning history  |
 
 ---
 
